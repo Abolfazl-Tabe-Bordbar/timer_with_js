@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head dir="rtl">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    </style>
+    <title>ATB</title>
+  </head>
+  <body class="bg-slate-800">
+    <section class="w-full md:w-9/12 h-[600px] box-border p-2 md:p-0 md:h-96  mx-auto mt-12 flex flex-col md:flex-row  justify-between items-center gap-4">
+      <div class="w-full md:w-6/12 h-3/6  md:h-full flex flex-col justify-around items-center border-b md:border-b-0">
+        <span class="text-xl text-white font-bold">TIMER</span>
+        <div class="w-9/12 h-3/6 flex justify-around items-center">
+          <div id="timer_hour" class="bg-blue-400 rounded-full w-2/12 h-14 flex justify-center items-center text-white text-xl font-bold"> 0 </div>
+          <div id="timer_minutes" class="bg-blue-400 rounded-full w-2/12 h-14 flex justify-center items-center text-white text-xl font-bold"> 0 </div>
+          <div id="timer_seconds" class="bg-blue-400 rounded-full w-2/12 h-14 flex justify-center items-center text-white text-xl font-bold"> 0 </div>
+        </div>
+        <div class="w-9/12 h-2/6 md:h-1/6 flex justify-around items-center">
+          <button id="timer_stop" class="w-5/12 h-4/6 bg-red-500 border-b-4 border-red-700 active:border-0 outline-none rounded-lg hidden justify-center items-center text-white font-bold"> STOP </button>
+          <button id="timer_start" class="w-5/12 h-4/6 bg-green-500 border-b-4 border-green-700 active:border-0 outline-none rounded-lg flex justify-center items-center text-white font-bold"> START </button>
+          <button id="timer_rest" class="w-5/12 h-4/6 bg-orange-500 border-b-4 border-orange-700 active:border-0 outline-none rounded-lg flex justify-center items-center text-white font-bold"> RESET </button>
+        </div>
+      </div>
+      <div class="w-full md:w-6/12 h-3/6  md:h-full flex flex-col justify-around items-center">
+        <span class="text-xl text-white font-bold">STOPWATCH</span>
+        <div class="w-9/12 h-3/6 flex justify-around items-center">
+          <input id="timer2_get_hour" type="number" class="bg-blue-400 rounded-xl border-b-4 text-center  border-blue-800 w-2/12 h-14 text-white text-xl font-bold" value="0"/>
+          <input id="timer2_get_minutes" type="number" class="bg-blue-400 rounded-xl border-b-4 text-center border-blue-800 w-2/12 h-14 text-white text-xl font-bold" value="0"/>
+          <input id="timer2_get_seconds" type="number" class="bg-blue-400 rounded-xl border-b-4 text-center border-blue-800 w-2/12 h-14 text-white text-xl font-bold" value="0"/>
+          
+          <div id="timer2_show_hour" class="bg-blue-400 rounded-full w-2/12 h-14 hidden justify-center items-center text-white text-xl font-bold"> 0 </div>
+          <div id="timer2_show_minutes" class="bg-blue-400 rounded-full w-2/12 h-14 hidden justify-center items-center text-white text-xl font-bold"> 0 </div>
+          <div id="timer2_show_seconds" class="bg-blue-400 rounded-full w-2/12 h-14 hidden justify-center items-center text-white text-xl font-bold"> 0 </div>
+        </div>
+        <div class="w-9/12 h-2/6 md:h-1/6 flex justify-around items-center">
+          <button id="timer2_stop" class="w-5/12 h-4/6 bg-red-500 border-b-4 border-red-700 active:border-0 outline-none rounded-lg hidden justify-center items-center text-white font-bold"> STOP </button>
+          <button id="timer2_start" class="w-5/12 h-4/6 bg-green-500 border-b-4 border-green-700 active:border-0 outline-none rounded-lg flex justify-center items-center text-white font-bold"> START </button>
+          <button id="timer2_rest" class="w-5/12 h-4/6 bg-orange-500 border-b-4 border-orange-700 active:border-0 outline-none rounded-lg flex justify-center items-center text-white font-bold"> RESET </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./main.js"></script>
+</html>
